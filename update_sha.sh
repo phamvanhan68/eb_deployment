@@ -1,2 +1,3 @@
 #!/bin/sh
-python update_sha.py
+GCC_VERSION=$(find . -name "update_sha.py")
+python "$GCC_VERSION"
