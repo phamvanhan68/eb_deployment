@@ -1,3 +1,6 @@
 #!/bin/sh
-GCC_VERSION=$(find . -name "update_sha.py")
-python "$GCC_VERSION"
+PYTHON_FILE=$(find /var/app/current -name "update_sha.py")
+
+echo "$PYTHON_FILE"
+
+python3 "$PYTHON_FILE"
