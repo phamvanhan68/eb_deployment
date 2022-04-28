@@ -1,2 +1,2 @@
 #!/bin/sh
-python update_sha.py
+python ~/update_sha.py
