@@ -1,10 +1,13 @@
 import json
 from flask import Flask, jsonify
-app = Flask(__name__)
-@app.route('/')
+
+application = Flask(__name__)
+
+@application.route('/')
 def index():
     return jsonify({'health': 'good'})
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    application.debug = True
+    application.run()
