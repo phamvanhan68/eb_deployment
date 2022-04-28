@@ -1,8 +1,8 @@
 name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
   EB_PACKAGE_S3_BUCKET_NAME : "google-crawler"
-  EB_APPLICATION_NAME       : "google-crawler"
-  EB_ENVIRONMENT_NAME       : "google-crawler-env"
+  EB_APPLICATION_NAME       : "Crawler" 
+  EB_ENVIRONMENT_NAME       : "Crawler-env"
   DEPLOY_PACKAGE_NAME       : "google-crawler-${{ github.sha }}.zip"
   AWS_REGION_NAME           : "ap-southeast-1"
 
