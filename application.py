@@ -1,5 +1,6 @@
 import json
 from flask import Flask, jsonify
+import os
 
 application = Flask(__name__)
 
@@ -7,10 +8,12 @@ application = Flask(__name__)
 def index():
     file = open('sha.txt', 'r')
     sha_number =  file.read()
+    env_variable = os.getenv('ENV_DATA_EXAMPLE');
     
     return jsonify({
         'health': 'good',
         'sha_number': sha_number,
+        'env_variable': env_variable,
     })
 
 
