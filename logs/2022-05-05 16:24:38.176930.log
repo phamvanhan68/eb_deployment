@@ -1,0 +1,34 @@
+INFO:root:Generating thread: 1
+INFO:root:Generating thread: 2
+INFO:WDM:
+
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Current google-chrome version is 100.0.4896
+INFO:WDM:Get LATEST chromedriver version for 100.0.4896 google-chrome
+INFO:WDM:Driver [/home/hanson/.wdm/drivers/chromedriver/linux64/100.0.4896.60/chromedriver] found in cache
+INFO:root:>>> Running on development mode (output file name won't be hashed): True
+INFO:root:>>> Running on test mode (run first 10 centres from input) : True
+INFO:root:>>> Trigger S3: False - Prefix: test_
+INFO:root:>>> Input data source: Local
+INFO:root:>>> 0 - Working on ChIJpdXbne9r1moRBsq6cJBJWfw
+INFO:root:       First review button works
+INFO:root:       Found 13 review(s) at first
+INFO:root:       Waiting for getting the reviews
+INFO:root:       Scrolling down...0
+INFO:root:       Loaded full review.
+INFO:root:       Got 13 reviews, wrote to file named se-40018009
+INFO:root:>>> 1 - Working on ChIJY9zODh0R1GoRw_wOs8zlemU
+INFO:root:       First review button works
+INFO:root:       Found 6 review(s) at first
+INFO:root:       Waiting for getting the reviews
+WARNING:root:       Can not find out the scroll div, perhaps we've got full reviews or there is no review.
+INFO:root:       Got 6 reviews, wrote to file named se-40018073
+INFO:root:>>> 2 - Working on ChIJhYubT2yFMioRRgoMn5jongI
+INFO:root:       First review button works
+INFO:root:       Found 3 review(s) at first
+INFO:root:       Waiting for getting the reviews
+WARNING:root:       Can not find out the scroll div, perhaps we've got full reviews or there is no review.
+INFO:root:       Got 3 reviews, wrote to file named se-40018081
+INFO:root:Took 0:00:14.371064
+INFO:root:Stopped the thread
+INFO:root:Stopped the thread

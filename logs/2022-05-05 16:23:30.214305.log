@@ -1,0 +1,15 @@
+INFO:root:Generating thread: 1
+INFO:root:Generating thread: 2
+INFO:WDM:
+
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Current google-chrome version is 100.0.4896
+INFO:WDM:Get LATEST chromedriver version for 100.0.4896 google-chrome
+INFO:WDM:Driver [/home/hanson/.wdm/drivers/chromedriver/linux64/100.0.4896.60/chromedriver] found in cache
+INFO:root:>>> Running on development mode (output file name won't be hashed): True
+INFO:root:>>> Running on test mode (run first 10 centres from input) : True
+INFO:root:>>> Trigger S3: False - Prefix: test_
+INFO:root:>>> Input data source: S3
+WARNING:root:Data source: S3 - There is no input data
+INFO:root:Stopped the thread
+INFO:root:Stopped the thread

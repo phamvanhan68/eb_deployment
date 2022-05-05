@@ -1,3 +1,5 @@
 test.yml
 note.md
 venv/*
+.env
+__pycache__/*
