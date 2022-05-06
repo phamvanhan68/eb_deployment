@@ -16,7 +16,7 @@ from selenium.webdriver.chrome.options import Options
 
 from Crawler import Crawler
 
-from webdriver_manager.chrome import ChromeDriverManager
+# from webdriver_manager.chrome import ChromeDriverManager
 
 load_dotenv()
 SHOULD_STOP = False
@@ -82,7 +82,8 @@ def main():
     options.add_argument("enable-automation")
     options.add_argument("--disable-infobars")
     options.add_argument("--disable-dev-shm-usage")
-    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+    # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+    driver = webdriver.Chrome(options=options)
     driver.binary_location = DRIVER_LOCATION
 
     OUTPUT_FOLDER = os.getenv('OUTPUT_FOLDER')
