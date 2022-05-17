@@ -87,7 +87,6 @@ def main():
     # driver = webdriver.Chrome(options=options)
     driver.binary_location = DRIVER_LOCATION
     
-
     OUTPUT_FOLDER = os.getenv('OUTPUT_FOLDER')
     GOOGLE_LINK = os.getenv('GOOGLE_LINK')
     STAGE = os.getenv('STAGE', 'dev')
