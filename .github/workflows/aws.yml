@@ -6,10 +6,7 @@ env:
   DEPLOY_PACKAGE_NAME       : "google-crawler-${{ github.sha }}.zip"
   AWS_REGION_NAME           : "ap-southeast-1"
 
-on: 
-  push:
-    branches: 
-      - master
+on: [push]
 
 jobs:
   check-release-tag:
