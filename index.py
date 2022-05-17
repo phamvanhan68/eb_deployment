@@ -83,6 +83,7 @@ def main():
     options.add_argument("--disable-infobars")
     options.add_argument("--disable-dev-shm-usage")
     # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+    
     driver = webdriver.Chrome(options=options)
     driver.binary_location = DRIVER_LOCATION
 
