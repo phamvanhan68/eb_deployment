@@ -14,7 +14,7 @@ on:
 jobs:
   check-release-tag:
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/space-ggcrawlerimeout')
+    if: startsWith(github.ref, 'refs/tags/space-ggcrawler')
     outputs:
       run_other_jobs: ${{ steps.check-tag.outputs.run_jobs }}
     steps:
