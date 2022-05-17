@@ -30,7 +30,7 @@ jobs:
   my_ci_pipeline:
     runs-on: ubuntu-latest
     if: |
-      alwayls() && (needs.check-release-tag.outputs.run_other_jobs == 'true')
+      always() && (needs.check-release-tag.outputs.run_other_jobs == 'true')
     needs: [check-release-tag]
       
     steps:
@@ -55,7 +55,7 @@ jobs:
   my_cd_pipeline:
     runs-on: ubuntu-latest
     if: |
-      alwayls() && (needs.check-release-tag.outputs.run_other_jobs == 'true') && (endsWith(needs.my_ci_pipeline.result, 'success')
+      always() && (needs.check-release-tag.outputs.run_other_jobs == 'true') && (endsWith(needs.my_ci_pipeline.result, 'success')
 
     needs: [my_ci_pipeline]
       
