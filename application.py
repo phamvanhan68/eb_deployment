@@ -8,7 +8,7 @@ application = Flask(__name__)
 def index():
     file = open('sha.txt', 'r')
     sha_number =  file.read()
-    env_variable = os.getenv('ENV_DATA_EXAMPLE');
+    env_variable = os.getenv('REVIEW_BUTTON');
     
     return jsonify({
         'health': 'good',
