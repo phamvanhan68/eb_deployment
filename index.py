@@ -95,7 +95,6 @@ def main():
     S3_TRIGGER = bool(int(os.getenv('S3_TRIGGER', 1)))
     PRINT_OUTPUT = bool(int(os.getenv('PRINT_OUTPUT', 0)))
     
-    
     DEVELOPMENT_MODE = True if STAGE == 'dev' else False
     FREFIX_FILE = ('review_dev_' if DEVELOPMENT_MODE else 'review_prod_') if S3_TRIGGER else 'test_'
     BUCKET = 'space-google-review-crawler-dev' if DEVELOPMENT_MODE else 'space-google-review-crawler'
